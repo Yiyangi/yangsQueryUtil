@@ -20,7 +20,7 @@ List list1 = userService.list(queryWrapper1);
 
 优化后
 
-QueryWrapper queryWrapper = new Repository().fielList(user);
+QueryWrapper queryWrapper = Repository.fielList(user);
 
 List<User> list = userService.list(queryWrapper);
   
