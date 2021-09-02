@@ -10,10 +10,9 @@ import java.lang.annotation.Target;
  * @Description:
  * @Date: 2021/9/2 10:53
  */
-@Target({ElementType.TYPE,ElementType.FIELD})
+@Documented
 @Retention(RetentionPolicy.RUNTIME)
-public @interface LikeQuery {
-
-
-
+@Target(ElementType.FIELD)
+public @interface Query {
+    RepositoryEnum queryType() default RepositoryEnum.EQ;
 }
